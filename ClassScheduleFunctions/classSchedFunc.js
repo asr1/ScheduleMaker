@@ -702,6 +702,7 @@ function CreateSchedule(start, end,  eventTime,  eventTimeEnd,  WeekDays, name, 
     //Tests if string contains only spaces
     function isEmptyString(obj)
     {
+	    if(obj == null) return true;
             for(var i = 0; i < obj.length; i++)
             {
                 if(obj.charAt(i) != ' ')
